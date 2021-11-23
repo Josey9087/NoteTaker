@@ -11,9 +11,9 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use(express.json())
 
-app.use('/api', API);
+app.use(API);
 
-app.use('/', HTML);
+app.use(HTML);
 
 app.listen(PORT, () => {
     console.log(`Listening on port ${PORT}`)
