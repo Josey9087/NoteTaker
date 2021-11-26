@@ -1,7 +1,7 @@
 const fs = require('fs');
 const util = require('util');
 
-
+// fs.readFile in promise form
 const readFromFile = util.promisify(fs.readFile);
 
 /** 

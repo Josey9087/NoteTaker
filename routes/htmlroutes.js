@@ -1,5 +1,8 @@
+// Reauires for code
 const router = require('express').Router();
 const path = require('path');
+
+// Choosing which files to display for get requests
 router.get('/notes', (req, res) =>
   res.sendFile(path.join(__dirname, '../public/notes.html'))
 );
