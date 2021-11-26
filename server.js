@@ -1,6 +1,6 @@
 const express = require('express');
 const PORT = process.env.PORT || 3001;
-const HTML = require('./routes/htmlroutes')
+const HTML = require('./routes/htmlRoutes')
 const API = require('./routes/apiRoutes')
 
 app = express();
@@ -15,6 +15,6 @@ app.use(API);
 
 app.use(HTML);
 
-app.listen(process.env.PORT || 3000, function(){
+app.listen(process.env.PORT || 3001, function(){
     console.log(`Listening on port ${PORT}`)
 });
