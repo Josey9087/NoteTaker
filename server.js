@@ -15,6 +15,6 @@ app.use(API);
 
 app.use(HTML);
 
-app.listen(PORT, () => {
+app.listen(process.env.PORT || 3000, function(){
     console.log(`Listening on port ${PORT}`)
 });
